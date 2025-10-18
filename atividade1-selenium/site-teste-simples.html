@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Teste Simples - Selenium</title>
+    <style>
+        /* Estilos básicos para deixar a página apresentável */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+            width: 350px;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        .input-group {
+            margin-bottom: 15px;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .btn:hover {
+            background-color: #45a049;
+        }
+        
+        .message {
+            margin-top: 20px;
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 2px solid #c3e6cb;
+        }
+        
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 2px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2>Tela de Login</h2>
+        
+        <!-- Campo de Usuário -->
+        <div class="input-group">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" placeholder="Digite seu usuário">
+        </div>
+        
+        <!-- Campo de Senha -->
+        <div class="input-group">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" placeholder="Digite sua senha">
+        </div>
+
+        <!-- Dropdown de Perfil -->
+        <div class="input-group">
+            <label for="perfil">Perfil de Acesso:</label>
+            <select id="perfil">
+                <option value="">Selecione um perfil</option>
+                <option value="admin">Administrador</option>
+                <option value="cliente">Cliente</option>
+                <option value="convidado">Convidado</option>
+            </select>
+        </div>
+
+        <!-- Botão de Login -->
+        <button class="btn" id="btnLogin">Entrar</button>
+
+        <!-- Mensagens de Sucesso e Erro -->
+        <div id="msgSuccess" class="message success">
+            ✓ Login realizado com sucesso!
+        </div>
+        <div id="msgError" class="message error">
+            ✗ Usuário, senha ou perfil inválido!
+        </div>
+    </div>
+
+    <script>
+        // JavaScript para simular o comportamento de login
+        document.getElementById('btnLogin').addEventListener('click', function() {
+            // Capturar valores dos campos
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+            const perfil = document.getElementById('perfil').value;
+
+            // Esconder mensagens anteriores
+            document.getElementById('msgSuccess').style.display = 'none';
+            document.getElementById('msgError').style.display = 'none';
+
+            // Validação: usuário "admin", senha "123" e perfil preenchido
+            if (user === 'admin' && pass === '123' && perfil !== '') {
+                document.getElementById('msgSuccess').style.display = 'block';
+            } else {
+                document.getElementById('msgError').style.display = 'block';
+            }
+        });
+    </script>
+
+</body>
+</html>
