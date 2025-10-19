@@ -2,7 +2,7 @@
   <img width="920" height="300" alt="seleniumJava" src="https://github.com/user-attachments/assets/b6f749e6-e079-40c1-9c33-85efe3b15600" />
 </p>
 
-# Atividade Selenium — Entendendo e Aprendendo sobre o Selenium
+# Atividade Selenium — Entendendo e Aprendendo sobre testes com Selenium + Java
 Respostas da atividade **Aitividade 1 - Selenium** da materia de Testes de Sistemas
 
 Um sistema de **testes automatizados** com **Selenium e Java**.  
