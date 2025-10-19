@@ -9,20 +9,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Desafio1LoginValido {
 
     public static void main(String[] args) {
 
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new FirefoxDriver();
 
         try {
-            System.out.println("1. Abrindo o navegador Chrome...");
+            System.out.println("1. Abrindo o navegador Firefox...");
             driver.manage().window().maximize();
 
-            String caminhoArquivo = "file:///C:/Users/021.910032/Downloads/atividade1-selenium/site-teste-simples.html";
+            String caminhoArquivo = "file:/home/fernando/Downloads/atividadesSelenium-main/atividade1-selenium/site-teste-simples.html";
             driver.get(caminhoArquivo);
             System.out.println("2 - Página carregada: " + caminhoArquivo);
 
