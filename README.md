@@ -3,6 +3,7 @@
 </p>
 
 [![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white)](#)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?logo=selenium&logoColor=fff)](#)
 
 # Atividade Selenium — Entendendo e Aprendendo sobre testes com Selenium + Java
 Respostas da atividade **Aitividade 1 - Selenium** da materia de Testes de Sistemas
