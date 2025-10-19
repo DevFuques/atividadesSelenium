@@ -2,6 +2,8 @@
   <img width="920" height="300" alt="seleniumJava" src="https://github.com/user-attachments/assets/b6f749e6-e079-40c1-9c33-85efe3b15600" />
 </p>
 
+[![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white)](#)
+
 # Atividade Selenium — Entendendo e Aprendendo sobre testes com Selenium + Java
 Respostas da atividade **Aitividade 1 - Selenium** da materia de Testes de Sistemas
 
