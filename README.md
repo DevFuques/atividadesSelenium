@@ -13,19 +13,19 @@ Criado para praticar conceitos de entrada de dados, sistema de erros e testes em
 # 🎯 Desafios da Atividade
 ## ✅ Desafio 1: Login com Dados Válidos
 
-Objetivo: Automatizar um login bem-sucedido e documentar com screenshot.
+  - Objetivo: Automatizar um login bem-sucedido e documentar com screenshot.
 
 ## ✅ Desafio 2: Login com Dados Inválidos
 
-Objetivo: Testar que o sistema rejeita credenciais incorretas.
+  - Objetivo: Testar que o sistema rejeita credenciais incorretas.
 
 ## ✅ Desafio 3: Validação de Campos Vazios
 
-Objetivo: Verificar que o sistema não permite login sem preencher os campos.
+  - Objetivo: Verificar que o sistema não permite login sem preencher os campos.
 
 ## ✅ Desafio 4: Login Sem Selecionar Perfil
 
-Objetivo: Testar validação quando o perfil não é selecionado.
+  - Objetivo: Testar validação quando o perfil não é selecionado.
 
 ## 🏆 Desafio BÔNUS
 
