@@ -22,8 +22,7 @@ public class Desafio2LoginInvalido {
 			System.out.println("1 - Abrindo o navegador Firefox...");
 			driver.manage().window().maximize();
 			
-            String caminhoArquivo = "file:Downloads/atividadesSelenium-main/atividade1-selenium/site-teste-simples.html";
-			driver.get(caminhoArquivo);
+            String caminhoArquivo = "file:C:\\Users\\021.910032\\Downloads\\atividadesSelenium-main\\atividade1-selenium/site-teste-simples.html";			driver.get(caminhoArquivo);
             System.out.println("2 - ágina carregada: " + caminhoArquivo);
             
             WebElement inputUsuario = driver.findElement(By.id("username"));

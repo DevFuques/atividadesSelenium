@@ -22,7 +22,7 @@ public class Desafio4SemPerfil {
             System.out.println("1. Abrindo o navegador Firefox...");
             driver.manage().window().maximize();
 
-            String caminhoArquivo = "file:/home/fernando/Downloads/atividadesSelenium-main/atividade1-selenium/site-teste-simples.html";
+            String caminhoArquivo = "file:///C:/Users/021.910032/Downloads/atividadesSelenium-main/atividade1-selenium/site-teste-simples.html";
             driver.get(caminhoArquivo);
             System.out.println("2 - Página carregada: " + caminhoArquivo);
 
@@ -35,7 +35,7 @@ public class Desafio4SemPerfil {
             System.out.println("4 - Campo 'Senha' preenchido com: 123");
 
             Select selectPerfil = new Select(driver.findElement(By.id("perfil")));
-            selectPerfil.selectByValue("Selecione um perfil");
+            selectPerfil.selectByVisibleText("Selecione um perfil");
             System.out.println("5 - Perfil selecionado: Selecione um perfil");
 
             WebElement botaoEntrar = driver.findElement(By.id("btnLogin"));

@@ -19,10 +19,10 @@ public class Desafio1LoginValido {
         WebDriver driver = new FirefoxDriver();
 
         try {
-            System.out.println("1. Abrindo o navegador Firefox...");
+            System.out.println("1 - Abrindo o navegador Firefox...");
             driver.manage().window().maximize();
 
-            String caminhoArquivo = "file:/home/fernando/Downloads/atividadesSelenium-main/atividade1-selenium/site-teste-simples.html";
+            String caminhoArquivo = "file:C:\\Users\\021.910032\\Downloads\\atividadesSelenium-main\\atividade1-selenium/site-teste-simples.html";
             driver.get(caminhoArquivo);
             System.out.println("2 - Página carregada: " + caminhoArquivo);
 

@@ -22,20 +22,20 @@ public class Desafio3CamposVazios {
             System.out.println("1. Abrindo o navegador Firefox...");
             driver.manage().window().maximize();
 
-            String caminhoArquivo = "file:/home/fernando/Downloads/atividadesSelenium-main/atividade1-selenium/site-teste-simples.html";
+            String caminhoArquivo = "file:C:\\Users\\021.910032\\Downloads\\atividadesSelenium-main\\atividade1-selenium/site-teste-simples.html";
             driver.get(caminhoArquivo);
             System.out.println("2 - Página carregada: " + caminhoArquivo);
 
             WebElement inputUsuario = driver.findElement(By.id("username"));
-            inputUsuario.sendKeys(" ");
+            inputUsuario.sendKeys("");
             System.out.println("3 - Campo 'Usuário' preenchido com:  ");
 
             WebElement inputSenha = driver.findElement(By.id("password"));
-            inputSenha.sendKeys(" ");
+            inputSenha.sendKeys("");
             System.out.println("4 - Campo 'Senha' preenchido com:  ");
 
             Select selectPerfil = new Select(driver.findElement(By.id("perfil")));
-            selectPerfil.selectByValue(" ");
+            selectPerfil.selectByValue("");
             System.out.println("5 - Perfil selecionado:  ");
 
             WebElement botaoEntrar = driver.findElement(By.id("btnLogin"));
