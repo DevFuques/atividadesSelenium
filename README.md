@@ -30,8 +30,4 @@ Criado para praticar conceitos de entrada de dados, sistema de erros e testes em
 
   - Objetivo: Testar validação quando o perfil não é selecionado.
 
-## 🏆 Desafio BÔNUS
-
-Objetivo: Criar uma bateria completa de testes com relatório.
-
 ---
